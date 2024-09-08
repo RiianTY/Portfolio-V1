@@ -1,0 +1,125 @@
+:root {
+  background-color: rgb(0, 0, 0);
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+
+.background-aura {
+  height: 100%;
+  width: 100%;
+  background-color: #000000ea;
+}
+
+.b {
+  border: 1px solid #ffffff1a;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 40px;
+  color: #ffffff;
+  background-color: rgba(41, 41, 41, 0.068);
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  height: 90vh;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 50px;
+}
+
+#header-txt {
+  display: flex;
+  font-size: 50px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+#role-txt {
+  font-size: 20px;
+}
+
+#statement {
+  font-size: 14px;
+  width: 220px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.cursor {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.cursor {
+  display: flex;
+  position: relative;
+  bottom: 6px;
+  left: 2px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 90%;
+  margin-left: 25px;
+}
+
+.icon {
+  display: flex;
+  fill: #ffffff60;
+  width: 35px;
+  height: 35px;
+}
+
+.icon:hover {
+  transition: all 0.3s ease;
+  filter: drop-shadow(10px 10px 20px rgb(255, 255, 255));
+  fill: #ffffff;
+}
