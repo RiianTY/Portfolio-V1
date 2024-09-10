@@ -31,6 +31,6 @@ document.addEventListener("mousemove", function (event) {
     const yPos = (event.clientY / window.innerHeight) * 100;
 
     // Update the background with a radial gradient
-    element.style.background = `radial-gradient(circle at ${xPos}% ${yPos}%, rgba(255, 255, 255, 0.4) 5%, rgba(0, 0, 0, 0) 30%)`;
+    element.style.background = `radial-gradient(circle at ${xPos}% ${yPos}%, rgba(255, 255, 255, 0.8) 10%, rgba(0, 0, 0, 0) 30%)`;
   }
 });
