@@ -33,8 +33,13 @@ body {
 .inner-container {
   display: flex;
   flex-direction: column;
+  min-width: 305px;
   width: 35vw;
   height: 90vh;
+}
+
+#sticky-con {
+  position: fixed;
 }
 
 .title {
@@ -57,7 +62,7 @@ body {
 
 #statement {
   font-size: 14px;
-  width: 220px;
+  width: 250px;
 }
 
 .socials {
@@ -80,11 +85,11 @@ body {
 
 .summary {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: left;
   height: 100%;
-  font-size: 20px;
-  color: #ffffff;
+  font-size: 18px;
+  color: #ffffffc0;
 }
 
 .details {
@@ -106,9 +111,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 550px;
+  min-width: 400px;
   width: 50%;
   height: 90%;
   margin-left: 25px;
+}
+
+.description a {
+  text-decoration: none;
+  color: #ffffffe0;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
 }
 
 .icon {
@@ -118,8 +133,10 @@ body {
   height: 35px;
 }
 
-.icon:hover {
+.icon:hover,
+.desc:hover {
   transition: all 0.3s ease;
-  filter: drop-shadow(10px 10px 20px rgb(255, 255, 255));
+  filter: drop-shadow(0px 2px 10px rgba(255, 255, 255, 0.9));
   fill: #ffffff;
+  color: #ffffff;
 }
